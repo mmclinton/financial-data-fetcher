@@ -1,20 +1,23 @@
 # Financial Data Fetcher Application
 
-This application provides a simple and accurate method to fetch financial data using the API from [site.financialmodelingprep.com](https://site.financialmodelingprep.com). It serves as a preferred alternative to platforms like Yahoo Finance, which can be cluttered with ads, multiple tabs, and other distractions.
+This application provides a simple and accurate method to fetch financial data. It uses the API from [site.financialmodelingprep.com](https://site.financialmodelingprep.com). This tool offers an advantage over platforms like Yahoo Finance, which often have ads, multiple tabs, and other distractions.
 
 ## Getting Started
 
-1. Clone the repository.
-2. Navigate to the project root directory.
-3. Install the required packages using:
+### 1. Clone the Repository:
+Clone this repository to your local machine to get started.
 
-    ```
-    
-    pip3 install -r requirements.txt
-    
-    ```
-    
-5. Sign up at [site.financialmodelingprep.com](https://site.financialmodelingprep.com) to obtain the API key.
+### 2. Set Up the Virtual Environment:
+Navigate to the project root directory and set up a virtual environment. Install the necessary packages using:
+
+### 3. Obtain the API Key:
+Sign up at [site.financialmodelingprep.com](https://site.financialmodelingprep.com) to obtain your API key.
+
+### 4. Input the API Key:
+Open the `fetch_data.py` file located inside the `utils` folder. Insert your API key on line 8 where indicated.
+
+### 5. Run the Application:
+With the API key in place, you can now run the application.
 
 ## Directory Structure
 
@@ -26,12 +29,14 @@ graph TD;
     C --> E[fetch_data.py];
     A --> F[requirements.txt];
     A --> G[README.md];
+
 ```
 ## Contributing
 
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+If you wish to contribute to this project, please create a pull request. For significant changes, open an issue first to discuss what you'd like to modify.
 
 ## License
 
 [MIT](https://choosealicense.com/licenses/mit/)
+
 
