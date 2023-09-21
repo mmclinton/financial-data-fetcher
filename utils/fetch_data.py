@@ -5,7 +5,7 @@ import re
 
 # API endpoint and key constants
 API_ENDPOINT = 'https://financialmodelingprep.com/api/v3/'
-API_KEY = 'PUT_YOUR_API_KEY_HERE'
+API_KEY = 'ac76b26ade0e3d4febd0d77b1b84ef0e'
 
 
 def transpose_financial_statements(income_statement_df, balance_sheet_df, cash_flow_df):
