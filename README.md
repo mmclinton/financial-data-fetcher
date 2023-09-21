@@ -9,9 +9,11 @@ Clone this repository to your local machine to get started.
 
 ### 2. Set Up the Virtual Environment:
 Navigate to the project root directory and set up a virtual environment. Install the necessary packages using:
-
+    ```
+    pip3 install -r requirements.txt
+    ```
 ### 3. Obtain the API Key:
-Sign up at [site.financialmodelingprep.com](https://site.financialmodelingprep.com) to obtain your API key.
+Sign up at [site.financialmodelingprep.com](https://site.financialmodelingprep.com) to obtain your free API key.
 
 ### 4. Input the API Key:
 Open the `fetch_data.py` file located inside the `utils` folder. Insert your API key on line 8 where indicated.
