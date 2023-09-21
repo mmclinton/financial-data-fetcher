@@ -1,5 +1,5 @@
 import streamlit as st
-from utils import fetch_data
+from ..utils import fetch_data
 
 
 # Main function to run the Streamlit application
