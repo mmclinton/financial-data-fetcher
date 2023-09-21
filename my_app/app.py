@@ -1,5 +1,9 @@
 import streamlit as st
-from ..utils import fetch_data
+import sys
+from pathlib import Path
+
+sys.path.append(str(Path(__file__).resolve().parent.parent))
+from utils import fetch_data
 
 
 # Main function to run the Streamlit application
@@ -29,7 +33,8 @@ def main():
     if st.button("Fetch Financial Statements"):
         try:
             # Fetch the financial statements data and store it in session state
-            st.session_state.income_statement_df, st.session_state.balance_sheet_df, st.session_state.cash_flow_df = fetch_data.fetch_financial_statements(ticker)
+            st.session_state.income_statement_df, st.session_state.balance_sheet_df, st.session_state.cash_flow_df = (
+                fetch_data.fetch_financial_statements(ticker))
         except Exception as e:
             # Display an error message if fetching data fails
             st.error(f'An error has occurred: {e}')
