@@ -12,7 +12,7 @@ def main():
     st.set_page_config(page_title='Financial Statements Tool', page_icon=':bar_chart:')
 
     # Display the main title of the page
-    st.title('Financial Data Tool')
+    st.title('Financial Data Fetcher')
 
     # Get the stock ticker input from the user
     ticker = st.text_input('Please input a stock ticker: ').upper().strip()
