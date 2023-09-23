@@ -101,7 +101,7 @@ def manual_rename_indices(income_statement_df, balance_sheet_df, cash_flow_df):
     return income_statement_df, balance_sheet_df, cash_flow_df
 
 
-# @st.cache_data
+@st.cache_data
 def fetch_financial_statements(ticker):
     """This function fetches financial statements from the API endpoint, creates a dataframe for each, and calls all
     data cleaning functions. This is the only function in 'fetch_data.py' called by the main function in 'app.py'."""
